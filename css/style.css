@@ -49,6 +49,7 @@ p {
 
 header {
     background-color: #fff;
+    overflow: hidden;
 }
 
 .header-nav {
@@ -206,6 +207,7 @@ header {
 .gateway-img {
     max-height: 1000px;
     /* padding-bottom: 80px; */
+    height: 100%;
 }
 
 .gateway-img img {
@@ -345,11 +347,11 @@ header {
     max-width: 530px;
 }
 
-.mountain-touch-img {
+/* .mountain-touch-img {
     max-height: 650px;
     max-width: 800px;
 
-}
+} */
 
 .mountain-touch-img img {
     width: 100%;
@@ -710,4 +712,206 @@ footer .para-text {
 
 .mb-booking-input:last-child .input-form-wrap input {
     border-bottom: none;
+}
+
+.laidback-sec {
+    padding: 90px 0 78px;
+}
+
+.gateway-service {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 325px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: unset;
+    margin-top: 90px;
+    gap: 50px;
+}
+
+.mountain-about-sec {
+    padding-top: 175px;
+}
+
+.about-canvas-sec {
+    background: url('../images/canvas-img2.webp');
+    padding-top: 120px;
+}
+
+.about-canvas-sec .canvas-box {
+    margin: auto;
+    margin-right: 0;
+}
+
+
+.banner-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.din-in-sec {
+    padding: 78px 0 0;
+}
+
+.grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Common style */
+.grid figure {
+    position: relative;
+    overflow: hidden;
+    max-width: 710px;
+    height: 610px;
+    cursor: pointer;
+    margin: 0 12px;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.grid figure img:hover {
+    transform: scale(1.1);
+    /* max-width: 100%; */
+    transition: transform 0.5s ease-in-out;
+}
+
+.grid figure figcaption {
+    backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid figure figcaption>a {
+    z-index: 1000;
+    /* text-indent: 200%; */
+    opacity: 0;
+}
+
+.grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+
+.grid figure h2 span {
+    font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    color: #fff;
+}
+
+.effect-zoe a {
+    margin-top: 15px;
+
+}
+
+.effect-zoe a p {
+    font-family: 'SF Pro Display-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-right: 25px;
+
+
+}
+
+figure.effect-zoe figcaption {
+    top: auto;
+    bottom: 0;
+    padding: 50px 65px;
+    height: 190px;
+    color: #fff;
+    transition: transform 0.35s;
+    transform: translate3d(0, 100%, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 3.72%, #000000 60.8%);
+    display: flex;
+    flex-direction: column;
+}
+
+figure.effect-zoe h2 {
+    float: left;
+    font-family: 'SF Pro Display-Medium';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27.4833px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+figure.effect-zoe p.description {
+    position: absolute;
+    bottom: 8em;
+    padding: 2em;
+    color: #fff;
+    text-transform: none;
+    font-size: 90%;
+    opacity: 0;
+    transition: opacity 0.35s;
+    backface-visibility: hidden;
+}
+
+figure.effect-zoe h2 {
+    transition: transform 0.35s;
+    transform: translate3d(0, 200%, 0);
+}
+
+figure.effect-zoe h2 {
+    display: inline-block;
+}
+
+figure.effect-zoe:hover p.description {
+    opacity: 1;
+}
+
+figure.effect-zoe:hover figcaption,
+figure.effect-zoe:hover h2 {
+    transform: translate3d(0, 0, 0);
+}
+
+figure.effect-zoe:hover h2 {
+    transition-delay: 0.05s;
+}
+
+@media screen and (max-width: 50em) {
+    .content {
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .grid figure {
+        display: inline-block;
+        float: none;
+        margin: 10px auto;
+        width: 100%;
+    }
 }
