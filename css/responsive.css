@@ -1,0 +1,559 @@
+@media(max-width:1600px) {
+    .mx-1600 {
+        max-width: calc(1686px - 281px);
+    }
+
+    .header-nav ul li {
+        font-size: 16px;
+    }
+
+    .input-form-wrap {
+        padding: 0 10px;
+    }
+
+    .booking-input-wrap {
+        padding: 12px 25px;
+    }
+
+    .search-icon {
+        padding: 10px;
+    }
+
+    .service-list-wrap {
+        max-width: calc(940px - 156px);
+    }
+
+    .headline-one {
+        font-size: calc(40px - 6px);
+    }
+
+    .headline-two {
+        font-size: calc(42px - 7px);
+    }
+
+    .know-more-btn {
+        margin-top: 70px;
+    }
+
+    .know-more-btn p {
+        margin-right: 25px;
+        font-size: 18px;
+    }
+
+    .canvas-sec {
+        padding: calc(80px - 13px) calc(130px - 21px) calc(120px - 60px);
+    }
+
+    .canvas-box {
+        max-width: calc(630px - 108px);
+        padding: calc(150px - 25px) calc(80px - 13px) calc(80px - 13px);
+    }
+
+    /* .gateway-content {
+        max-width: calc(510px - 85p);
+    } */
+    .stay-type-sec .nav-link {
+        font-size: 18px;
+    }
+
+    .stay-type-sec {
+        padding: calc(160px - 26px) 0 calc(140px - 23px);
+    }
+
+    .mountain-touch-content-wrap {
+        padding: calc(75px - 12px) calc(135px - 22px) 0;
+    }
+
+    .moutain-touch-bg {
+        padding: 0 calc(135px - 22px) calc(75px - 12px);
+    }
+
+    .sky-high-sec {
+        padding: calc(130px - 21px*2);
+    }
+
+    .spa-img img {
+        margin: calc(58px - 9px) 0 calc(50px - 8px);
+    }
+
+    .sky-high-sec .para-text {
+        margin-left: 45px;
+    }
+
+    .ft-contact-details p {
+        font-size: 18px;
+    }
+
+    .footer-contact {
+        padding: calc(105px - 17px);
+    }
+
+    footer .para-text {
+        margin-bottom: 35px;
+        font-size: 18px;
+    }
+
+    .service-item-wrap svg {
+        margin-bottom: 10px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .theme-btn {
+        padding: 18px 25px;
+    }
+
+    .sky-high-sec .service-list-wrap {
+        max-width: calc(650px - 108px);
+    }
+
+    .quick-link-sec {
+        padding: 80px 120px;
+    }
+
+    .quick-link-wrap ul li a {
+        font-size: 16px;
+    }
+
+    .privacy-wrapper {
+        max-width: 1100px;
+        margin-top: 70px;
+    }
+
+    .mail-social-wrap a {
+        font-size: 18px;
+    }
+
+    .gateway-img {
+        max-height: calc(1000px - 166px);
+    }
+}
+
+@media (max-width: 1400px) {
+    .mx-1600 {
+        max-width: calc(1686px - 281px*2);
+    }
+
+    .service-list-wrap {
+        max-width: calc(940px - 156px* 2);
+
+    }
+
+    .services-sec {
+        padding: 40px 0;
+    }
+
+    .canvas-sec {
+        padding: calc(80px - 13px*2) calc(130px - 21px*2) calc(120px - 60px);
+    }
+
+    .canvas-box {
+        max-width: calc(630px - 108px*1.5);
+        padding: calc(150px - 25px*2) calc(80px - 13px*2) calc(80px - 13px*2);
+    }
+
+    .know-more-btn {
+        margin-top: 40px;
+    }
+
+    .gateway-img {
+        max-height: calc(1000px - 166px*2);
+    }
+
+    .stay-type-sec {
+        padding: calc(160px - 26px* 3.5) 0 calc(140px - 23px* 3.5);
+    }
+
+    .mountain-touch-content {
+        padding: 0 30px
+    }
+
+    .mountain-touch-content-wrap {
+        padding: calc(75px - 12px) calc(135px - 22px) 0;
+    }
+
+    .sky-high-sec {
+        padding: calc(130px - 21px* 3);
+    }
+
+    .spa-img img {
+        margin: calc(58px - 9px*2) 0 calc(50px - 8px*2);
+    }
+
+    .sky-high-sec .service-list-wrap {
+        max-width: calc(650px - 108px*2);
+    }
+
+    .footer-contact {
+        padding: calc(105px - 17px*2);
+    }
+
+    footer .para-text {
+        margin-bottom: 30px;
+        font-size: 17px;
+    }
+
+    .ft-contact-details {
+        padding: 0 25px;
+    }
+
+    .ft-contact-details span svg,
+    .ft-contact-details svg {
+        width: 25px;
+        margin-right: 6px;
+    }
+
+    .contact-number p:first-child {
+        margin-right: 10px;
+
+    }
+
+    .ft-contact-details p {
+        font-size: 16px;
+    }
+
+    .social-media-icon-wrap {
+        padding-top: 10px;
+    }
+
+    .ft-mail-id {
+        padding-bottom: 10px;
+    }
+
+    .quick-link-sec {
+        padding: 60px calc(120px - 20px);
+    }
+
+    .privacy-wrapper {
+        margin-top: 50px;
+    }
+
+    .privacy-wrapper-list .para-text {
+        max-width: 200px;
+    }
+}
+
+@media(max-width:1200px) {
+    .header-nav {
+        padding: 20px 0;
+    }
+
+    .header-nav ul li {
+        font-size: 15px;
+    }
+
+    .booking-input-wrap {
+        padding: 7px 12px;
+    }
+
+    .service-item-wrap svg {
+        margin-bottom: 10px;
+        width: 65px;
+        height: 60px;
+    }
+
+    .know-more-btn p {
+        margin-right: 20px;
+    }
+
+    .know-more-btn {
+        margin-top: 30px;
+    }
+
+    .canvas-box {
+        padding: calc(150px - 25px* 3) calc(80px - 13px* 2.5) calc(80px - 13px* 2.5);
+    }
+
+    .gateway-content {
+        max-width: calc(510px - 85px);
+    }
+
+    .canvas-sec {
+        padding: calc(80px - 13px* 3) calc(130px - 21px* 3) calc(120px - 60px);
+    }
+
+    .theme-btn svg {
+        width: 35px;
+    }
+
+    .theme-btn p {
+        margin-top: 20px;
+        font-size: 17px;
+    }
+
+    .theme-btn {
+        padding: 16px 20px;
+        margin-bottom: 20px;
+    }
+
+    .stay-type-sec {
+        padding: calc(160px - 26px* 4) 0 calc(140px - 23px* 4);
+    }
+
+    #myTabContent {
+        padding-top: 35px;
+    }
+
+    .book-btn {
+        right: 5rem;
+        width: 120px;
+    }
+
+    .headline-one {
+        font-size: calc(40px - 6px*2);
+    }
+
+    .headline-two {
+        font-size: calc(42px - 6px*2);
+    }
+
+    .spa-img img {
+        margin: calc(58px - 9px* 2.5) 0 calc(50px - 8px* 2.5);
+    }
+
+    .sky-high-sec .para-text {
+        margin-left: 20px;
+    }
+
+    .sky-high-sec {
+        padding: calc(130px - 21px* 4);
+    }
+
+    .footer-contact {
+        padding: calc(105px - 17px* 3);
+    }
+
+    .ft-contact-details {
+        padding: 0 15px;
+    }
+
+    .mail-social-wrap a {
+        font-size: 16px;
+    }
+
+    .quick-link-sec h5 {
+        font-size: 16px;
+    }
+
+    .footer-sub-nav li {
+        text-align: center;
+    }
+}
+
+@media(max-width:991px) {
+    .input-form-wrap {
+        max-width: 160px;
+    }
+
+    .booking-input-wrap {
+        max-width: 700px;
+    }
+
+    .gate-way-sec .theme-btn {
+        position: relative;
+    }
+
+    .gateway-content {
+        max-width: 510px;
+        padding: 80px 0;
+    }
+
+    .theme-btn {
+        max-width: 130px;
+    }
+
+    .stay-type-sec .gateway-content {
+        padding: 40px 0;
+    }
+
+    .stay-type-sec {
+        padding: calc(160px - 26px* 5) 0 calc(140px - 23px* 4);
+    }
+
+    .privacy-wrapper {
+        margin-top: 35px;
+        flex-direction: column;
+    }
+
+    .quick-link-sec {
+        padding: 50px calc(120px - 20px*2);
+    }
+
+    .privacy-wrapper-list {
+        flex-direction: column;
+    }
+
+    .footer-sub-nav {
+        margin-bottom: 10px;
+    }
+
+    .privacy-wrapper-list .para-text {
+        margin-bottom: 5px;
+        max-width: 100%;
+    }
+
+    .quick-link-wrap ul li a {
+        font-size: 15px;
+    }
+
+    .ft-contact-details p {
+        font-size: 14px;
+    }
+
+    .ft-contact-details {
+        flex-direction: column;
+        padding: 0 10px;
+        align-items: flex-start;
+    }
+
+    footer .para-text {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .footer-logo {
+        margin: auto;
+    }
+
+    .footer-logo img {
+        max-height: 150px;
+    }
+
+    .sky-high-sec .para-text {
+        max-width: 100%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .sky-high-sec .service-list-wrap {
+        margin: auto;
+    }
+
+    .know-more-btn p {
+        margin-right: 10px;
+        font-size: 17px;
+    }
+
+    .mountain-touch-content-wrap {
+        padding: calc(75px - 12px) calc(135px - 22px* 3) 0;
+    }
+
+    .mountain-touch-sec {
+        padding: 30px 35px;
+    }
+
+    .mountain-touch-content-wrap,
+    .moutain-touch-bg {
+        padding: 0;
+    }
+
+    .mountain-touch-content {
+        padding: 0px 15px;
+    }
+
+    .spa-img img {
+        margin: calc(58px - 9px* 3) 0 calc(50px - 8px* 3);
+    }
+
+    .footer-contact p {
+        line-height: 1.8;
+    }
+
+}
+
+@media(max-width:768px) {
+    .mb-booking-input {
+        display: block;
+    }
+
+    .gateway-content {
+        max-width: 510px;
+        padding: 40px 0;
+    }
+
+    .stay-type-sec .gateway-content {
+        padding: 0 0 20px;
+    }
+
+    .mountain-touch-content p {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .mountain-touch-content {
+        padding: 15px 0;
+        margin: unset;
+    }
+
+    .sky-high-sec .para-text {
+        margin-left: 0;
+    }
+
+    .img-wrap {
+        display: flex;
+        justify-content: space-between;
+        max-width: 300px;
+        align-items: center;
+        margin: auto;
+    }
+
+    .quick-link-sec h5 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .quick-link-sec {
+        padding: 50px calc(120px - 20px* 4);
+    }
+
+    .privacy-wrapper {
+        margin-top: 10px;
+    }
+
+    .ft-contact-wrap {
+        flex-direction: column;
+    }
+
+    .ft-contact-details {
+        flex-direction: row;
+        margin-bottom: 15px;
+        border: none;
+        padding: 0;
+    }
+
+    .mail-social-wrap {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:575px) {
+    .service-list-wrap {
+        flex-direction: column;
+
+    }
+
+    .service-item-wrap {
+        margin-bottom: 20px;
+    }
+
+    .canvas-sec {
+        padding: 30px 35px;
+    }
+
+    .canvas-box {
+        padding: 25px 30px;
+    }
+
+    .gateway-content {
+        padding: 20px;
+    }
+
+    .sky-high-sec {
+        padding: 20px 20px;
+    }
+
+    .footer-contact {
+        padding: 30px 35px;
+    }
+
+}
