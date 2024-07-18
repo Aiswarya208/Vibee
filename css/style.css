@@ -1,21 +1,32 @@
 @font-face {
     font-family: 'SF Pro Display-Light';
-    src: url('../fonts/SF-Pro-Display-Light.otf');
+    src: url('../font/SF-Pro-Display-Light.otf');
 }
 
 @font-face {
     font-family: 'SF Pro Display-Thin';
-    src: url('../fonts/SF-Pro-Display-Thin.otf');
+    src: url('../font/SF-Pro-Display-Thin.otf');
 }
 
 @font-face {
     font-family: 'SF Pro Display-Medium';
-    src: url('../fonts/SF-Pro-Display-Semibold.otf');
+    src: url('../font/SF-Pro-Display-Medium.otf');
 }
 
 @font-face {
+    font-family: 'SF Pro Display-Semibold';
+    src: url('../font/SF-Pro-Display-Semibold.otf');
+}
+
+@font-face {
+    font-family: 'SF Pro Display-Bold';
+    src: url('../font/SF-Pro-Display-Bold.otf');
+}
+
+
+@font-face {
     font-family: 'SF Pro Display-Regular';
-    src: url('../fonts/SF-Pro-Display-Regular.otf');
+    src: url('../font/SF-Pro-Display-Regular.otf');
 }
 
 a {
@@ -751,7 +762,7 @@ footer .para-text {
 }
 
 .din-in-sec {
-    padding: 78px 0 0;
+    padding-top: 78px;
 }
 
 .grid {
@@ -759,10 +770,10 @@ footer .para-text {
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 100%;
+    width: 1600px;
+    margin: auto;
 }
 
-/* Common style */
 .grid figure {
     position: relative;
     overflow: hidden;
@@ -770,20 +781,21 @@ footer .para-text {
     height: 610px;
     cursor: pointer;
     margin: 0 12px;
+    transition: 0.02s linear;
 }
 
 .grid figure img {
     position: relative;
     display: block;
-    max-width: 100%;
-    transition: transform 0.5s ease-in-out;
+    max-width: 425px;
     height: 100%;
 }
 
 .grid figure img:hover {
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     /* max-width: 100%; */
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.02s ease-in-out;
+    max-width: 710px;
 }
 
 .grid figure figcaption {
@@ -868,18 +880,6 @@ figure.effect-zoe h2 {
     color: #FFFFFF;
 }
 
-figure.effect-zoe p.description {
-    position: absolute;
-    bottom: 8em;
-    padding: 2em;
-    color: #fff;
-    text-transform: none;
-    font-size: 90%;
-    opacity: 0;
-    transition: opacity 0.35s;
-    backface-visibility: hidden;
-}
-
 figure.effect-zoe h2 {
     transition: transform 0.35s;
     transform: translate3d(0, 200%, 0);
@@ -889,9 +889,6 @@ figure.effect-zoe h2 {
     display: inline-block;
 }
 
-figure.effect-zoe:hover p.description {
-    opacity: 1;
-}
 
 figure.effect-zoe:hover figcaption,
 figure.effect-zoe:hover h2 {
@@ -902,16 +899,433 @@ figure.effect-zoe:hover h2 {
     transition-delay: 0.05s;
 }
 
-@media screen and (max-width: 50em) {
-    .content {
-        padding: 0 10px;
-        text-align: center;
-    }
+/* Booking-page style  start*/
+.booking-head {
+    font-family: 'SF Pro Display-Semibold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 0;
+    color: #841B52;
+}
 
-    .grid figure {
-        display: inline-block;
-        float: none;
-        margin: 10px auto;
-        width: 100%;
-    }
+.booking-subhead {
+    font-family: 'SF Pro Display-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1.5;
+    color: #757575;
+}
+
+.booking-sec {
+    padding: 60px;
+}
+
+.booking-image-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-booking {
+    margin-bottom: 20px;
+    height: 580px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.image-frame {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.booking-details-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.booking-image-wrap img {
+    max-width: 235px;
+}
+
+.booking-form {
+    padding: 100px 65px 57px;
+    background-color: #F8F8F8;
+    max-width: 670px;
+    width: 100%;
+    height: 100%;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-group svg {
+    position: absolute;
+    right: 13px;
+    top: 15px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 18px 20px;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    line-height: 1;
+    color: #393838;
+    outline: none;
+    width: 100%;
+    border: none;
+}
+
+.booking-price span {
+    font-family: 'SF Pro Display-Semibold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 1.2;
+    color: #868686;
+}
+
+.booking-btn {
+    background-color: #841B52;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 10px;
+    padding: 12px 0;
+    margin: 70px 0;
+
+}
+
+.booking-btn a {
+    font-family: 'SF Pro Display-Medium';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    letter-spacing: 1.5px;
+}
+
+.booking-main .para-text {
+    font-family: 'SF Pro Display-Medium';
+}
+
+.booking-btn-terms-wrap span {
+    font-family: 'SF Pro Display-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #B7B7B7;
+}
+
+.booking-service-list {
+    max-width: 100%;
+}
+
+.view-sec .para-text {
+    max-width: 720px;
+}
+
+.view-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    max-width: 1500px;
+    width: 100%;
+}
+
+.view-wrap img {
+    margin-bottom: 22px;
+}
+
+.view-wrap h3 {
+    font-family: 'SF Pro Display-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32.5043px;
+    line-height: 1.2;
+    color: #841B52;
+}
+
+.view-items {
+    max-width: 492px;
+}
+
+.customer-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1571px;
+    width: 100%;
+}
+
+.customer-img {
+    max-width: 230px;
+    border-radius: 50%;
+    margin-bottom: 35px;
+}
+
+.rating-wrap {
+    margin-bottom: 10px;
+
+}
+
+.rating-wrap i {
+    color: #FDB935;
+}
+
+.view-items .para-text {
+    font-size: 17px;
+}
+
+.customer-item h5 {
+    font-family: 'SF Pro Display-Semibold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #841B52;
+}
+
+.customer-item .para-text {
+    font-size: 16px;
+    font-family: 'SF Pro Display-Medium';
+}
+
+.customer-item {
+    max-width: 331px;
+}
+
+.customer-review-sec {
+    padding: 80px 0 130px;
+}
+
+.customer-review-sec h2 {
+    margin-bottom: 70px;
+}
+
+.customer-item .para-text,
+h5,
+.rating-wrap {
+    margin-left: 12px;
+}
+
+.villa-grid .wt-btn {
+    padding: 10px 35px;
+    background-color: #fff;
+    width: fit-content;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.wt-btn a {
+    font-family: 'SF Pro Display-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: #393939;
+
+}
+
+.villa-grid {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.villa-grid figure {
+    position: relative;
+    overflow: hidden;
+    max-width: 512px;
+    height: 665px;
+    cursor: pointer;
+    margin: 0 12px;
+}
+
+.villa-grid figure img {
+    position: relative;
+    display: block;
+    height: 100%;
+}
+
+.villa-grid figure img:hover {
+    transition: transform 0.02s ease-in-out;
+}
+
+
+
+.villa-grid figure figcaption::before,
+.villa-grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.villa-grid figure figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.villa-grid figure figcaption>a {
+    z-index: 1000;
+    opacity: 1;
+}
+
+.villa-type-list a {
+    margin-top: 15px;
+
+}
+
+.villa-type-list a p {
+    font-family: 'SF Pro Display-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-right: 25px;
+
+
+}
+
+figure.villa-type-list figcaption {
+    top: auto;
+    bottom: 0;
+    padding: 50px 65px;
+    height: 190px;
+    color: #fff;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 3.72%, #000000 60.8%);
+    display: flex;
+    flex-direction: column;
+}
+
+figure.villa-type-list figcaption .wt-btn,
+figure.villa-type-list figcaption.fig-wrap {
+    transition: transform 0.35s;
+    transform: translate3d(0, 150%, 0);
+}
+
+figure.villa-type-list h2 {
+    float: left;
+    font-family: 'SF Pro Display-Medium';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    letter-spacing: 1.2px;
+}
+
+figure.villa-type-list .fig-wrap {
+    transition: transform 0.35s;
+    transform: translate3d(0, 50%, 0);
+}
+
+
+figure.villa-type-list:hover figcaption .wt-btn,
+figure.villa-type-list:hover figcaption .fig-wrap {
+    transform: translate3d(0, 0, 0);
+}
+
+figure.villa-type-list:hover .wt-btn,
+figure.villa-type-list:hover .fig-wrap {
+    transition-delay: 0.05s;
+}
+
+.fig-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fig-head .para-text {
+    font-family: 'SF Pro Display-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+
+.villa-grid .know-more-btn {
+    margin-top: 0;
+}
+
+.room-types-sec {
+    padding: 50px 0;
+}
+
+.amenities-list-wrap {
+    max-width: 595px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-height: 140px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.amenity-item {
+    max-width: 50%;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.amenities-sec h5 {
+    font-family: 'SF Pro Display-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.2;
+    color: #484848;
+    margin-bottom: 25px;
+    margin-left: 0;
+}
+
+.show-more-btn {
+    border: 1px solid #484848;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 15px 30px;
+    margin: 30px 0;
+}
+
+.show-more-btn a {
+    font-family: 'SF Pro Display-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1;
+    color: #484848;
+}
+
+.amenities-sec {
+    padding: 20px 0;
+}
+
+.Booking-villa-sec .know-more-btn {
+    display: flex;
+    justify-content: center;
 }
